@@ -5,7 +5,7 @@ require('dotenv').config();
 const app = new express();
 
 // database connection
-mongoose.connect('mongodb://localhost:27017/whatver-you-want-to-call-it', { useNewUrlParser: true }, (err) => {
+mongoose.connect('mongodb://localhost:27017/test_user_db1', { useNewUrlParser: true }, (err) => {
   if (err) {
     console.log('mongodb not on')
   } else {
