@@ -76,9 +76,13 @@ Challenge
 ### Local storage login and logout system
 
 Context
-- The front end we'd like you to build upon is for the inspirational quote app. The quote app should allow users to register and login / logout.
+- The front end we'd like you to build upon is for an inspirational quote app. The quote app should allow users to register and login / logout.
 
 Challenge
 
 Completing this task will involve the following:
 - Storing the JWT in local storage so the user remains authenticated for further requests
+- When the token is received refreshing the page so that the user can click on a button to receive an inspirational quote from this api https://theysaidso.com/api/
+- You'll need to setup and API key to use the service 
+- When a request is sent to access the quote from the API the token is sent via the headers so that the jwt verify method can be called
+- The page will then receive the quote response and the quote can be displayed
