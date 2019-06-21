@@ -1,55 +1,12 @@
-## Afternoon challenges
-
-### Connect your own database 
-
-- Connect a local mongodb database to express 
-- Create a db on the mongo command line, create a user collection, then add in four user objects, you can use what's below
-
-```json
-  {
-    "name": "harrison",
-    "password": "password",
-    "role": "admin"
-  },
-  {
-    "name": "anhar",
-    "password": "password",
-    "role": "card game expert"
-  },
-  {
-    "name": "lav",
-    "password": "password",
-    "role": "cricket expert"
-  },
-  {
-    "name": "leah",
-    "password": "password",
-    "role": "meetups expert"
-  }
-```
-
-- Add the correct database string
-
-```js
-// replace users-basic-auth-app with your db name
-mongoose.connect('mongodb://localhost:27017/users-basic-auth-app', { useNewUrlParser: true }, (err) => {
-  if (err) {
-    console.log('db not connected')
-  } else {
-    console.log('db connected')
-  }
-})
-```
-
 ### Token challenge
 
 Extend the authentication example by implementing a new registration route. This should allow the user to send a POST request to /auth/register with their username and password in the body of the request. The callback should do the following:
 
-- Validate the user has provided a username and password
+- Validate the user has provided a username and password - DONE
 - Confirm the user does not already exist in MongoDB
-- Create a new user in MongoDB
-- Generate a token
-- Return the token or a valid error if these conditions are not met
+- Create a new user in MongoDB 
+- Generate a token - DONE
+- Return the token or a valid error if these conditions are not met - DONE
 
 Confirm this works with Postman and that the generated token can be used to access protected routes.
 
