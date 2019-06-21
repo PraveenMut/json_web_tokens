@@ -1,11 +1,10 @@
 {
   "name": "afternoon-code",
   "version": "1.0.0",
-  "description": "- Connect a local mongodb database to express  - Create a db on the mongo command line, create a user collection, then add in four user objects, you can use what's below",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
